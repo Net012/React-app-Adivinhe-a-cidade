@@ -3,6 +3,7 @@ import imagem1 from "../images/imagem1.jpeg";
 import imagem2 from "../images/imagem2.jpeg";
 import imagem3 from "../images/imagem3.jpeg";
 import imagem4 from "../images/imagem4.jpeg";
+import imagem5 from "../images/imagem5.jpeg";
 
 function App() {
   const respostaCerta = "pelotas";
@@ -48,13 +49,15 @@ function App() {
             <div className="d-flex justify-content-center">
               <img
                 src={
-                  contador === 1
+                      contador === 1
                     ? imagem1
                     : contador === 2
                     ? imagem2
                     : contador === 3
                     ? imagem3
-                    : imagem4
+                    : contador === 4
+                    ? imagem4
+                    : imagem5
                 }
                 onClick={Contador}
               />
